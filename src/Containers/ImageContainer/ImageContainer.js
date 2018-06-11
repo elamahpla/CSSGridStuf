@@ -20,7 +20,7 @@ class ImageContainer extends Component {
         <DummyComponent />
         {/* <Requests /> */}
         {/* <Showoff /> */}
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Footer />
       </div>
     );

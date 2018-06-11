@@ -6,10 +6,18 @@
 //   grid-row: 5 / -1;
 // }
 
+// .Footer {
+//   background: orangered;
+//   color: black;
+//   font-size: 2.2rem;
+//   grid-column: full-start / full-end;
+//   grid-row: 8 / -1;
+// }
+
 .Footer {
   background: orangered;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / full-end;
+  grid-column: 1 / full-end;
   grid-row: 8 / -1;
 }

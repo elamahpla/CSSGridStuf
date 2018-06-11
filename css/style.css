@@ -18,7 +18,7 @@ body {
   background: darkolivegreen;
   color: black;
   font-size: 2.2rem;
-  grid-column: 2 / span 6;
+  grid-column: 1 / span 7;
   grid-row: 2 / -1; }
 
 .Contact {
@@ -38,14 +38,14 @@ body {
   background: orangered;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / full-end;
+  grid-column: 1 / full-end;
   grid-row: 8 / -1; }
 
 .Header {
   background: purple;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / -1; }
+  grid-column: 1 / -1; }
 
 .ImageGallery {
   background: yellowgreen;
