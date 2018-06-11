@@ -1,0 +1,46 @@
+// .Row {
+//   max-width: $gridWidth;
+//   color: $black;
+//   margin: 0 auto;
+
+//   &:not(:last-child) {
+//     margin-bottom: $gutterVertical;
+//   }
+
+//   @include clearfix;
+  
+//   [class^="col-"] {
+//     float: left;
+
+//     &:not(:last-child) {
+//       margin-right: $gutterHorizontal;
+//     }
+//   }
+
+//   .Col-1-of-2 {
+//     width: calc((100% - #{$gutterHorizontal}) / 2);
+//   }
+//   .Col-1-of-3 {
+//     width: calc((100% - 2 * #{$gutterHorizontal}) / 3);
+//   }
+//   .Col-2-of-3 {
+//     width: calc(2 * ((100% - 2 * #{$gutterHorizontal}) / 3) + #{$gutterHorizontal});
+//   }
+//   .Col-1-of-4 {
+//     width: calc((100% - 3 * #{$gutterHorizontal}) / 4);
+//   }
+//   .Col-2-of-4 {
+//     width: calc(2 * ((100% - 3 * #{$gutterHorizontal}) / 4) + #{$gutterHorizontal});
+//   }
+//   .Col-3-of-4 {
+//     width: calc(3 * ((100% - 3 * #{$gutterHorizontal}) / 4) + 2 * #{$gutterHorizontal});
+//   }
+  
+// }
+
+// .TestGrid {
+//   display: flex;
+//   width: 50%;
+//   align-content: center;
+//   justify-content: center;
+// }

@@ -1,0 +1,19 @@
+.Container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  // 80vh Is the height of the first Row.
+  // Min-Content: Is a keyword representing the largest minimal content contribution of the grid items occupying the grid track.
+  // Means that the content will grow with resizing. Could also write auto.
+  // 40vw: Will take up 40% of the viewport width
+  // Fourth Row: Is repeated three times with min-content
+  // Instead of 8 explicit, can also 3 defined + 3 repeat for a total of 6, then use implicit rows after that.
+  // Grid-Template-Columns
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+  // Naming the tracks or columns here. Sidebar is 8 rem(s). Lines can have multiple names
+  // 8rem is the first column, it will be used for the sidebar
+  // Max is 14rem, Never more than that.
+  // min-content is for the minimum amount required 
+  // Can use 7-8 to define the columns, currently have 7 columns
+  // Since the grid-template-rows are based on VH and VW, they'll be responsive: http://puu.sh/AC5LS/b6302468a8.png
+  // 
+}
