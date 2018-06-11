@@ -1,6 +1,6 @@
 .Container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 1fr 19vh min-content 40vw 5rem repeat(3, min-content);
   // 80vh Is the height of the first Row.
   // Min-Content: Is a keyword representing the largest minimal content contribution of the grid items occupying the grid track.
   // Means that the content will grow with resizing. Could also write auto.

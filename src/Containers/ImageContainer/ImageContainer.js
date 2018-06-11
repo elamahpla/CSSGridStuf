@@ -16,10 +16,10 @@ class ImageContainer extends Component {
         <Header />
         <ImageGallery />
         <BodyContent />
-        <Contact />
-        <DummyComponent />
-        <Requests />
-        <Showoff />
+        {/* <Contact /> */}
+        {/* <DummyComponent /> */}
+        {/* <Requests /> */}
+        {/* <Showoff /> */}
         <Sidebar />
         <Footer />
       </div>

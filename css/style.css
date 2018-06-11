@@ -18,7 +18,8 @@ body {
   background: darkolivegreen;
   color: black;
   font-size: 2.2rem;
-  grid-column: center-start / center-end; }
+  grid-column: 2 / span 8;
+  grid-row: 2 / -1; }
 
 .Contact {
   background: burlywood;
@@ -36,19 +37,21 @@ body {
   background: orangered;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  grid-row: 5 / -1; }
 
 .Header {
   background: purple;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / -1; }
 
 .ImageGallery {
   background: yellowgreen;
   color: black;
   font-size: 2.2rem;
-  grid-column: full-start / full-end; }
+  grid-column: 10 / -1;
+  grid-row: 2 / -1; }
 
 .Requests {
   background: peru;
@@ -71,5 +74,5 @@ body {
 
 .Container {
   display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 1fr 19vh min-content 40vw 5rem repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
