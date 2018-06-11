@@ -2,6 +2,7 @@
   background: brown;
   color: black;
   font-size: 2.2rem;
-  grid-column: col-start 7 / full-end;
-  grid-row: 1 / 1;
+  grid-column: 8 / -1;
+  grid-row: 2 / span 4;
+  height: 50%;
 }

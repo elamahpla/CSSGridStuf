@@ -17,7 +17,7 @@ class ImageContainer extends Component {
         <ImageGallery />
         <BodyContent />
         {/* <Contact /> */}
-        {/* <DummyComponent /> */}
+        <DummyComponent />
         {/* <Requests /> */}
         {/* <Showoff /> */}
         <Sidebar />
