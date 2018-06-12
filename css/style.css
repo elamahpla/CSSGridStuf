@@ -69,6 +69,26 @@ body {
   grid-row: 1 / 2;
   text-align: center; }
 
+.Modal {
+  background: #000;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 75%;
+  height: 75%; }
+
+.Backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.3); }
+
 .ImageGallery {
   background: #ffd1dc;
   color: black;
