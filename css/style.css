@@ -50,6 +50,7 @@ body {
       background-image: linear-gradient(to right bottom, blue, yellowgreen); }
   .DummyComponent:hover .DummyComponent-Side-Front {
     transform: rotateY(-180deg);
+    transition: all .9s ease;
     color: transparent; }
   .DummyComponent:hover .DummyComponent-Side-Back {
     transform: rotateY(0); }

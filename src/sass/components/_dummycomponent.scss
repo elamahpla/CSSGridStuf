@@ -64,6 +64,7 @@
   }
   &:hover &-Side-Front {
     transform: rotateY(-180deg);
+    transition: all .9s ease;
     color: transparent;
   }
   &:hover &-Side-Back {

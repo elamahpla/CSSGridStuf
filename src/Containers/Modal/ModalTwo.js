@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ModalTwo extends React.Component {
+class ModalTwo extends Component {
   closeModal = (event) => {
     event.preventDefault();
     if(this.props.onClose) {

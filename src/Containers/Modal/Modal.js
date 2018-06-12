@@ -14,17 +14,22 @@ class Modal extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.openModalHandler}>Open modal</button>
-        <ModalTwo 
+        <button 
+          onClick={this.openModalHandler}>
+          Open modal
+        </button>
+        <ModalTwo
           isOpen={this.state.isModalOpen} 
           onClose={this.closeModalHandler}
         >
           <h1>Modal title</h1>
           <p>hello</p>
-          <p><button
-              onKeyDown={this.escapeKeyHandler}
-              onKeyPress={this.escapeKeyHandler}
-              onClick={this.closeModalHandler}>Close</button></p>
+          <p>
+            <button
+              onClick={this.closeModalHandler}>
+                Close
+            </button>
+          </p>
         </ModalTwo>
       </div>
     )
