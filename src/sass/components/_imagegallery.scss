@@ -13,16 +13,17 @@
   grid-column: 8 / -1;
   grid-row: 3 / -1;
   display: grid;
-  grid-template-rows: repeat(8, max-content);
+  grid-template-rows: repeat(4, max-content);
   grid-template-columns: repeat(4, max-content);
-  grid-gap: 2rem;
-  & h1 {
-    font-size: 2rem;
-    text-decoration: underline;
-  }
+  grid-gap: 2.5rem;
+  justify-content: center;
+  padding: 3rem 0;
   &-Image {
-    width: 10rem;
-    height: 10rem;
+    width: 7.5rem;
+    height: 7.5rem;
     border-radius: 50%;
+    &:hover {
+      transform: scale(1.5);
+    }
   }
 }
