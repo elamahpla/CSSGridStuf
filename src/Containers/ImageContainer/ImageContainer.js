@@ -9,6 +9,7 @@ import Requests from '../../Component/ImageContainerComponents/Requests';
 import Showoff from '../../Component/ImageContainerComponents/Showoff';
 import DummyComponent from '../../Component/ImageContainerComponents/DummyComponent';
 
+const test = 'test';
 class ImageContainer extends Component {
   render() {
     return (
