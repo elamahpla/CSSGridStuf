@@ -38,14 +38,13 @@
 
 .DummyComponent {
   grid-column: 8 / -1;
-  grid-row: 2 / span 4;
+  grid-row: 2 / 2;
   -moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
-  height: 13.2rem;
   &-Side {
+    height: 100%;
     width: 100%;
-    height: 13.2rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -56,7 +55,6 @@
   }
   &-Side-Front {
     height: 100%;
-    background-image: linear-gradient(to right bottom, blue, yellowgreen);
   }
   &-Side-Back {
     transform: rotateY(180deg);
@@ -66,6 +64,7 @@
   }
   &:hover &-Side-Front {
     transform: rotateY(-180deg);
+    color: transparent;
   }
   &:hover &-Side-Back {
     transform: rotateY(0);
