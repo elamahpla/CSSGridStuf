@@ -10,7 +10,7 @@ class ModalTwo extends Component {
   render() {
     if (this.props.isOpen === false) return null
     return (
-      <div className={this.props.containerClassName}>
+      <div>
         <div className="Modal">
           {this.props.children}
         </div>

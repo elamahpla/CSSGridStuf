@@ -110,7 +110,8 @@ body {
     border-radius: 20rem;
     border: none;
     outline: none;
-    box-shadow: .25rem .35rem black; }
+    box-shadow: .25rem .35rem black;
+    cursor: pointer; }
   .ModalDiv-Button-Close {
     grid-column: 3 / 4;
     grid-row: 5 / 6;
@@ -121,7 +122,8 @@ body {
     border-radius: 20rem;
     border: none;
     outline: none;
-    box-shadow: .25rem .35rem black; }
+    box-shadow: .25rem .35rem black;
+    cursor: pointer; }
   .ModalDiv-Button-Open:hover, .ModalDiv-Button-Close:hover {
     box-shadow: .5rem .7rem black;
     transform: translateY(-0.5rem);

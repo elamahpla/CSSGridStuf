@@ -36,6 +36,7 @@
       border: none;
       outline: none;
       box-shadow: .25rem .35rem black;
+      cursor: pointer;
     }
     &-Close {
       grid-column: 3 / 4;
@@ -48,6 +49,7 @@
       border: none;
       outline: none;
       box-shadow: .25rem .35rem black;
+      cursor: pointer;
     }
     &-Open:hover,
     &-Close:hover {
@@ -62,21 +64,3 @@
     }
   }
 }
-
-// .OpenModal {
-//   width: 25%;
-//   height: 25%;
-//   border-radius: 20rem;
-//   border: none;
-//   outline: none;
-//   box-shadow: .25rem .35rem black;
-//   &:hover {
-//     box-shadow: .5rem .7rem black;
-//     transform: translateY(-.5rem);
-//     transition: all .3s;
-//   }
-//   &:active {
-//     transform: translateY(.25rem);
-//     transition: all .3s;
-//   }
-// }
