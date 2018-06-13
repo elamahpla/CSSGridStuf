@@ -31,8 +31,12 @@ body {
   grid-row: 2 / 2;
   -moz-perspective: 150rem;
   perspective: 150rem;
-  position: relative; }
+  position: relative;
+  width: 50%; }
   .DummyComponent-Side {
+    background: green;
+    font-size: 2.2rem;
+    color: white;
     height: 100%;
     width: 100%;
     transition: all .8s ease;
@@ -43,15 +47,18 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .DummyComponent-Side-Front {
-    height: 100%; }
+    height: 100%;
+    width: 100%;
+    text-align: center; }
   .DummyComponent-Side-Back {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    width: 100%;
+    text-align: center; }
     .DummyComponent-Side-Back-1 {
       background-image: linear-gradient(to right bottom, blue, yellowgreen); }
   .DummyComponent:hover .DummyComponent-Side-Front {
     transform: rotateY(-180deg);
-    transition: all .9s ease;
-    color: transparent; }
+    transition: all .9s ease; }
   .DummyComponent:hover .DummyComponent-Side-Back {
     transform: rotateY(0); }
 
@@ -71,7 +78,7 @@ body {
   text-align: center; }
 
 .Modal {
-  background: #000;
+  background: rgba(35, 41, 48, 0.95);
   color: white;
   position: absolute;
   top: 50%;
@@ -83,12 +90,45 @@ body {
 
 .Backdrop {
   position: absolute;
+  height: 102vh;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   z-index: 4;
-  background: rgba(0, 0, 0, 0.3); }
+  background: black; }
+  .Backdrop:active {
+    grid-column: 1 / span -1;
+    grid-row: 1 / span -1; }
+
+.ModalDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); }
+  .ModalDiv-Button-Open {
+    width: 25%;
+    height: 25%;
+    border-radius: 20rem;
+    border: none;
+    outline: none;
+    box-shadow: .25rem .35rem black; }
+  .ModalDiv-Button-Close {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    width: 75%;
+    height: 25%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20rem;
+    border: none;
+    outline: none;
+    box-shadow: .25rem .35rem black; }
+  .ModalDiv-Button-Open:hover, .ModalDiv-Button-Close:hover {
+    box-shadow: .5rem .7rem black;
+    transform: translateY(-0.5rem);
+    transition: all .3s; }
+  .ModalDiv-Button-Open:active, .ModalDiv-Button-Close:active {
+    transform: translateY(0.25rem);
+    transition: all .3s; }
 
 .ImageGallery {
   background: #ffd1dc;

@@ -8,13 +8,14 @@ class Modal extends Component {
   openModalHandler = () => {
     this.setState({isModalOpen: true});
   }
-  closeModalHandler = (event) => {
+  closeModalHandler = () => {
     this.setState({isModalOpen: false});
   }
   render() {
     return (
       <div>
-        <button 
+        <button
+          className="ModalDiv-Button-Open" 
           onClick={this.openModalHandler}>
           Open modal
         </button>
@@ -22,14 +23,15 @@ class Modal extends Component {
           isOpen={this.state.isModalOpen} 
           onClose={this.closeModalHandler}
         >
-          <h1>Modal title</h1>
-          <p>hello</p>
-          <p>
-            <button
-              onClick={this.closeModalHandler}>
-                Close
-            </button>
-          </p>
+        <div className="ModalDiv">
+          <h1>Test</h1>
+          <p>test</p>
+          <button
+            className="ModalDiv-Button-Close"
+            onClick={this.closeModalHandler}>
+              Close
+          </button>
+        </div>
         </ModalTwo>
       </div>
     )

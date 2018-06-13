@@ -1,5 +1,5 @@
 .Modal {
-  background: #000;
+  background: rgba(35, 41, 48, .95);
   color: white;
   position: absolute;
   top: 50%;
@@ -12,12 +12,71 @@
 
 .Backdrop {
   position: absolute;
+  height: 102vh;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   z-index: 4;
-  background: rgba(0, 0, 0, 0.3);
+  background: black;
+  &:active {
+    grid-column: 1 / span -1;
+    grid-row: 1 / span -1;
+  }
 }
 
+.ModalDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  &-Button {
+    &-Open {
+      width: 25%;
+      height: 25%;
+      border-radius: 20rem;
+      border: none;
+      outline: none;
+      box-shadow: .25rem .35rem black;
+    }
+    &-Close {
+      grid-column: 3 / 4;
+      grid-row: 5 / 6;
+      width: 75%;
+      height: 25%;
+      justify-self: center;
+      align-self: center;
+      border-radius: 20rem;
+      border: none;
+      outline: none;
+      box-shadow: .25rem .35rem black;
+    }
+    &-Open:hover,
+    &-Close:hover {
+      box-shadow: .5rem .7rem black;
+      transform: translateY(-.5rem);
+      transition: all .3s;
+    }
+    &-Open:active,
+    &-Close:active {
+      transform: translateY(.25rem);
+      transition: all .3s;
+    }
+  }
+}
 
+// .OpenModal {
+//   width: 25%;
+//   height: 25%;
+//   border-radius: 20rem;
+//   border: none;
+//   outline: none;
+//   box-shadow: .25rem .35rem black;
+//   &:hover {
+//     box-shadow: .5rem .7rem black;
+//     transform: translateY(-.5rem);
+//     transition: all .3s;
+//   }
+//   &:active {
+//     transform: translateY(.25rem);
+//     transition: all .3s;
+//   }
+// }

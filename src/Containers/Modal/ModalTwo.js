@@ -15,8 +15,9 @@ class ModalTwo extends Component {
           {this.props.children}
         </div>
         {!this.props.noBackdrop && 
-          <div className="Backdrop"
-          onClick={this.closeModal}
+          <div 
+            className="Backdrop"
+            onClick={this.closeModal}
           />
         }
       </div>
