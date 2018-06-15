@@ -34,7 +34,7 @@ body {
   position: relative;
   width: 50%; }
   .DummyComponent-Side {
-    background: green;
+    background-image: linear-gradient(to right bottom, yellowgreen, blue);
     font-size: 2.2rem;
     color: white;
     height: 100%;
@@ -67,7 +67,9 @@ body {
   color: black;
   font-size: 2.2rem;
   grid-column: 1 / full-end;
-  grid-row: 8 / -1; }
+  grid-row: 8 / -1;
+  display: flex;
+  justify-content: space-around; }
 
 .Header {
   background: purple;
@@ -78,7 +80,7 @@ body {
   text-align: center; }
 
 .Modal {
-  background: rgba(35, 41, 48, 0.95);
+  background: #232930;
   color: white;
   position: absolute;
   top: 50%;

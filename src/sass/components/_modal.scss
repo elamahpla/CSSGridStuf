@@ -1,5 +1,5 @@
 .Modal {
-  background: rgba(35, 41, 48, .95);
+  background: rgb(35, 41, 48);
   color: white;
   position: absolute;
   top: 50%;
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   z-index: 4;
-  background: black;
+  background: rgba(0, 0, 0, 1);
   &:active {
     grid-column: 1 / span -1;
     grid-row: 1 / span -1;
